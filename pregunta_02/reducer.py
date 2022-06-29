@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
                 sys.stdout.write("{}\t{}\n".format(curkey, v_aux))
 
-           # curkey = key
-           # v_aux = val
+            curkey = key
+            v_aux = val
 
     sys.stdout.write("{}\t{}\n".format(curkey, v_aux))
