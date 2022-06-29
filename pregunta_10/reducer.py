@@ -26,3 +26,5 @@ if __name__ == '__main__':
             numeros = str(int(val)) 
  
     sys.stdout.write("{}\t{}\n".format(curkey, numeros))
+
+  
