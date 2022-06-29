@@ -1,6 +1,5 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
-#! /usr/bin python3
 
 import sys
 
