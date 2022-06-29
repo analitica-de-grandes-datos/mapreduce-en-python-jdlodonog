@@ -9,4 +9,4 @@ if __name__ == "__main__":
 
         lista6 = line.split(" ")
             
-         sys.stdout.write("{}\t{}\n".format(lista6[0],float(lista6[2])))
+        sys.stdout.write("{}\t{}\n".format(lista6[0],float(lista6[2])))
