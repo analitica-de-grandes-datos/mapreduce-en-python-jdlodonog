@@ -1,31 +1,36 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
-
 import sys
 
-
+#
+# Esta funcion reduce los elementos que tienen la misma clave
+#
 if __name__ == '__main__':
 
     curkey = None
-    total = 0
-
+    v_max  = 0
 
     for line in sys.stdin:
 
         key, val = line.split("\t")
-        val = int(val)
+        val = float(val)
 
         if key == curkey:
+    
+            if val > v_max:
+                v_max = val
+            if val < v_min:
+                v_min = val
 
-            total += val
         else:
-
+   
             if curkey is not None:
-
-                sys.stdout.write("{}\t{}\n".format(curkey, total))
+      
+                sys.stdout.write("{}\t{}\t{}\n".format(curkey, v_max, v_min))
 
             curkey = key
-            total = val
+            v_max = val
+            v_min = val
 
-    sys.stdout.write("{}\t{}\n".format(curkey, total))
+    sys.stdout.write("{}\t{}\t{}\n".format(curkey, v_max, v_min))
